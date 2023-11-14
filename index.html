@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<nav id="mainMenu">
+    <a href="home.html">Home</a>
+    <a href="pokeapi.html">PokeAPI</a>
+    <a href="page1.html">Info</a>
+    <a href="page2.html">Contacto</a>
+  </nav>
+  <header>
+    <img src="/pokedex.png" alt="Pokedex" class ="pokedex">
+    <img src="/FirstGeneration.png" alt="FirstGeneration" class ="FirstGeneration" >
+    <img src="/separadorsquirtle.png" alt="separadorsquirtle" class="separadorSquirtle">
+  </header>
+<body>
+    <input type="text" id="searchInput" placeholder="Buscar Pokémon">
+
+
+    <div id="loading" class="loading">
+        <img src="loading.gif" alt="Cargando...">
+    </div>   
+
+    <div id="menu" class="menu">
+        <button data-type="all" class="active">Todos</button>
+        <button data-type="grass"><img src="grassicon.png" alt="Hierba"></button>
+        <button data-type="fire"><img src="fireicon.png" alt="Fuego"></button>
+        <button data-type="water"><img src="watericon.png" alt="Agua"></button>
+        <button data-type="normal"><img src="normalicon.png" alt="Normal"></button>
+        <button data-type="electric"><img src="electricicon.png" alt="Electrico"></button>
+        <button data-type="fighting"><img src="fightingicon.png" alt="Luchador"></button>
+        <button data-type="rock"><img src="rockicon.png" alt="Ground"></button>
+        <button data-type="flying"><img src="flyingicon.png" alt="Volador"></button>
+        <button data-type="ice"><img src="iceicon.png" alt="Hielo"></button>
+        <button data-type="psychic"><img src="psychicicon.png" alt="Psiquico"></button>
+        <button data-type="dragon"><img src="dragonicon.png" alt="Dragón"></button>
+        <button data-type="poison"><img src="poisonicon.png" alt="Veneno"></button>
+        <button data-type="fairy"><img src="fairyicon.png" alt="Hada"></button>
+        <button data-type="ghost"><img src="ghosticon.png" alt="Fantasma"></button>
+        <!-- Agrega botones para otros tipos de Pokémon -->
+    </div>
+
+    <div id = "container" ><div id="pillsContainer"></div></div>
+
+</body>
+<script src="/main.js"></script>
+</html>
