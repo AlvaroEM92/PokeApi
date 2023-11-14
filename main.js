@@ -250,7 +250,7 @@ function filterPokemonsByType(type) {
 
     // Muestra todos los Pokémon si se selecciona 'Todos'
     if (type === 'all') {
-        pills$$.forEach(pill => pill.style.display = 'block');
+        pills$$.forEach(pill => pill.style.display = 'flex');
     } else {
         // Oculta los Pokémon que no coinciden con el tipo seleccionado
         pills$$.forEach(pill => {
@@ -265,7 +265,7 @@ function filterPokemonsByType(type) {
             });
 
             if (typeMatch) {
-                pill.style.display = 'block';
+                pill.style.display = 'flex';
             } else {
                 pill.style.display = 'none';
             }
